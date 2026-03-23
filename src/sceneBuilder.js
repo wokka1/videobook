@@ -171,8 +171,8 @@ const SHAPE_BUILDERS = {
 
     // Flames - multiple cones for natural look
     const flameColors = ['#ff6600', '#ff8800', '#ffaa00', '#ff4400'];
-    const flameCount = params.flames || 5;
-    const flameHeight = params.flameHeight || 1.5;
+    const flameCount = params.flames ?? 5;
+    const flameHeight = params.flameHeight ?? 1.5;
     for (let i = 0; i < flameCount; i++) {
       const h = flameHeight * (0.5 + Math.random() * 0.6);
       const r = 0.1 + Math.random() * 0.2;

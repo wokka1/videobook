@@ -44,6 +44,56 @@ controls.maxPolarAngle = Math.PI * 0.85;
 controls.minDistance = 2;
 controls.maxDistance = 30;
 
+// --- WASD movement ---
+const moveState = { forward: false, backward: false, left: false, right: false, up: false, down: false };
+const moveSpeed = 5;
+
+window.addEventListener('keydown', e => {
+  switch (e.code) {
+    case 'KeyW': moveState.forward = true; break;
+    case 'KeyS': moveState.backward = true; break;
+    case 'KeyA': moveState.left = true; break;
+    case 'KeyD': moveState.right = true; break;
+    case 'KeyQ': moveState.down = true; break;
+    case 'KeyE': moveState.up = true; break;
+  }
+});
+
+window.addEventListener('keyup', e => {
+  switch (e.code) {
+    case 'KeyW': moveState.forward = false; break;
+    case 'KeyS': moveState.backward = false; break;
+    case 'KeyA': moveState.left = false; break;
+    case 'KeyD': moveState.right = false; break;
+    case 'KeyQ': moveState.down = false; break;
+    case 'KeyE': moveState.up = false; break;
+  }
+});
+
+function updateMovement(dt) {
+  const direction = new THREE.Vector3();
+  camera.getWorldDirection(direction);
+  direction.y = 0;
+  direction.normalize();
+
+  const right = new THREE.Vector3();
+  right.crossVectors(direction, camera.up).normalize();
+
+  const delta = new THREE.Vector3();
+  if (moveState.forward) delta.add(direction);
+  if (moveState.backward) delta.sub(direction);
+  if (moveState.right) delta.add(right);
+  if (moveState.left) delta.sub(right);
+  if (moveState.up) delta.y += 1;
+  if (moveState.down) delta.y -= 1;
+
+  if (delta.length() > 0) {
+    delta.normalize().multiplyScalar(moveSpeed * dt);
+    camera.position.add(delta);
+    controls.target.add(delta);
+  }
+}
+
 // --- Scene management ---
 let scenes = [];
 let currentSceneIndex = 0;
@@ -203,6 +253,7 @@ function animate() {
   const time = clock.elapsedTime;
 
   controls.update();
+  updateMovement(dt);
   animateParticles(dt);
   animateFireAndLights(time);
 
