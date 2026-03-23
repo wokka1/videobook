@@ -1,0 +1,3611 @@
+{
+  "scenes": [
+    {
+      "title": "Chapter 13 - Scene 1: Alone at Dusk",
+      "narration": "The few small patches of light that showed through the forest canopy were beginning to change from blue to purple, and Chaz began to feel uneasy about being left alone.",
+      "background": "#1a0e2e",
+      "fog": {
+        "color": "#1a1030",
+        "near": 10,
+        "far": 50
+      },
+      "camera": {
+        "position": [
+          4,
+          3.5,
+          9
+        ],
+        "target": [
+          0,
+          1.5,
+          0
+        ]
+      },
+      "bloom": {
+        "strength": 0.4,
+        "radius": 0.3,
+        "threshold": 0.9
+      },
+      "audioStart": 0,
+      "lights": [
+        {
+          "type": "ambient",
+          "color": "#12082a",
+          "intensity": 0.9
+        },
+        {
+          "type": "hemisphere",
+          "color": "#4a3070",
+          "groundColor": "#0a1a05",
+          "intensity": 1.25
+        },
+        {
+          "type": "directional",
+          "color": "#5533aa",
+          "intensity": 0.8,
+          "position": [
+            5,
+            15,
+            3
+          ],
+          "castShadow": true
+        }
+      ],
+      "objects": [
+        {
+          "name": "ground",
+          "shape": "plane",
+          "params": {
+            "width": 60,
+            "height": 60,
+            "widthSegments": 10,
+            "heightSegments": 10
+          },
+          "material": {
+            "color": "#1a2a10",
+            "roughness": 0.95,
+            "metalness": 0
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "receiveShadow": true
+        },
+        {
+          "name": "ground-detail",
+          "shape": "plane",
+          "params": {
+            "width": 15,
+            "height": 15
+          },
+          "material": {
+            "color": "#1f2f15",
+            "roughness": 1
+          },
+          "position": [
+            0,
+            0.01,
+            0
+          ],
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "receiveShadow": true
+        },
+        {
+          "name": "tree-1",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5,
+            "trunkRadius": 0.3,
+            "canopyRadius": 2.2,
+            "layers": 3,
+            "canopyColor": "#0f2a0f"
+          },
+          "position": [
+            -5,
+            0,
+            -5
+          ]
+        },
+        {
+          "name": "tree-2",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 6,
+            "trunkRadius": 0.35,
+            "canopyRadius": 2.8,
+            "layers": 4,
+            "canopyColor": "#0f2a0f"
+          },
+          "position": [
+            6,
+            0,
+            -6
+          ]
+        },
+        {
+          "name": "tree-3",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 4.5,
+            "trunkRadius": 0.25,
+            "canopyRadius": 2,
+            "layers": 3,
+            "canopyColor": "#1a3a1a"
+          },
+          "position": [
+            -7,
+            0,
+            -8
+          ]
+        },
+        {
+          "name": "tree-4",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5.5,
+            "trunkRadius": 0.3,
+            "canopyRadius": 2.5,
+            "layers": 3,
+            "canopyColor": "#153015"
+          },
+          "position": [
+            4,
+            0,
+            -9
+          ]
+        },
+        {
+          "name": "tree-5",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 4,
+            "trunkRadius": 0.2,
+            "canopyRadius": 1.8,
+            "layers": 3,
+            "canopyColor": "#1a3a1a"
+          },
+          "position": [
+            -9,
+            0,
+            -3
+          ]
+        },
+        {
+          "name": "tree-6",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5,
+            "trunkRadius": 0.28,
+            "canopyRadius": 2.3,
+            "layers": 3,
+            "canopyColor": "#0f250f"
+          },
+          "position": [
+            9,
+            0,
+            -4
+          ]
+        },
+        {
+          "name": "tree-bg-1",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 6,
+            "trunkRadius": 0.3,
+            "canopyRadius": 2,
+            "layers": 2,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            -3,
+            0,
+            -13
+          ]
+        },
+        {
+          "name": "tree-bg-2",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 7,
+            "trunkRadius": 0.35,
+            "canopyRadius": 2.5,
+            "layers": 2,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            2,
+            0,
+            -14
+          ]
+        },
+        {
+          "name": "old-firepit",
+          "shape": "campfire",
+          "params": {
+            "radius": 0.7,
+            "logs": 3,
+            "flames": 0,
+            "flameHeight": 0,
+            "charred": true
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rocks-1",
+          "shape": "rocks",
+          "params": {
+            "count": 4,
+            "spread": 1.5,
+            "size": 0.35,
+            "color": "#555555"
+          },
+          "position": [
+            2.5,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "rocks-2",
+          "shape": "rocks",
+          "params": {
+            "count": 3,
+            "spread": 1,
+            "size": 0.25,
+            "color": "#4a4a4a"
+          },
+          "position": [
+            -2,
+            0,
+            2
+          ]
+        },
+        {
+          "name": "bush-1",
+          "shape": "bush",
+          "params": {
+            "count": 5,
+            "size": 0.5,
+            "color": "#1a3a15"
+          },
+          "position": [
+            -4,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "bush-2",
+          "shape": "bush",
+          "params": {
+            "count": 4,
+            "size": 0.35,
+            "color": "#1a3515"
+          },
+          "position": [
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bush-3",
+          "shape": "bush",
+          "params": {
+            "count": 3,
+            "size": 0.4,
+            "color": "#152a12"
+          },
+          "position": [
+            3,
+            0,
+            -3
+          ]
+        },
+        {
+          "name": "chaz",
+          "shape": "figure",
+          "params": {
+            "height": 1.7,
+            "clothColor": "#5a4a30",
+            "skinColor": "#c8a882",
+            "pose": "standing"
+          },
+          "position": [
+            1.5,
+            0,
+            2.5
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  5,
+                  0,
+                  6
+                ]
+              },
+              {
+                "time": 5,
+                "position": [
+                  3,
+                  0,
+                  4
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 12,
+                "position": [
+                  2,
+                  0,
+                  2.5
+                ],
+                "easing": "easeOut"
+              },
+              {
+                "time": 15,
+                "position": [
+                  2,
+                  0,
+                  2.5
+                ],
+                "rotation": [
+                  0,
+                  -30,
+                  0
+                ]
+              },
+              {
+                "time": 20,
+                "position": [
+                  2,
+                  0,
+                  2.5
+                ],
+                "rotation": [
+                  0,
+                  -30,
+                  0
+                ]
+              },
+              {
+                "time": 50,
+                "position": [
+                  2,
+                  0,
+                  2.5
+                ],
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "time": 60,
+                "position": [
+                  1.5,
+                  0,
+                  2.5
+                ],
+                "rotation": [
+                  0,
+                  15,
+                  0
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 90,
+                "position": [
+                  1.5,
+                  0,
+                  2.5
+                ],
+                "rotation": [
+                  0,
+                  90,
+                  0
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 110,
+                "position": [
+                  1.5,
+                  0,
+                  2.5
+                ],
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "backpack",
+          "shape": "box",
+          "params": {
+            "width": 0.5,
+            "height": 0.6,
+            "depth": 0.3
+          },
+          "material": {
+            "color": "#6b4226",
+            "roughness": 0.9,
+            "metalness": 0
+          },
+          "position": [
+            2,
+            0.3,
+            2.5
+          ]
+        },
+        {
+          "name": "rapier",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.015,
+            "height": 1.1
+          },
+          "material": {
+            "color": "#cccccc",
+            "roughness": 0.2,
+            "metalness": 0.8
+          },
+          "position": [
+            2.2,
+            0.55,
+            2.3
+          ],
+          "rotation": [
+            0,
+            0,
+            30
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0
+              },
+              {
+                "time": 14,
+                "opacity": 0
+              },
+              {
+                "time": 16,
+                "opacity": 1,
+                "easing": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "name": "leopard-corpse",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.3,
+            "height": 1.5
+          },
+          "material": {
+            "color": "#c4a44a",
+            "roughness": 0.8
+          },
+          "position": [
+            -2.5,
+            0.2,
+            3.5
+          ],
+          "rotation": [
+            90,
+            0,
+            20
+          ]
+        }
+      ],
+      "particles": [
+        {
+          "name": "dust-motes",
+          "count": 30,
+          "spread": [
+            20,
+            10,
+            20
+          ],
+          "offset": [
+            0,
+            6,
+            0
+          ],
+          "color": "#8866aa",
+          "size": 0.06,
+          "opacity": 0.25,
+          "drift": true,
+          "driftSpeed": 0.3,
+          "twinkle": true
+        }
+      ]
+    },
+    {
+      "title": "Chapter 13 - Scene 2: The Tinderbox",
+      "narration": "Scraping the two bars together, Chaz produced an impressive spray of sparks. The flame grew, and he held a torch over it. It caught instantly.",
+      "background": "#140a22",
+      "fog": {
+        "color": "#160e28",
+        "near": 8,
+        "far": 40
+      },
+      "camera": {
+        "position": [
+          2,
+          2,
+          4.5
+        ],
+        "target": [
+          0.5,
+          1,
+          1
+        ]
+      },
+      "bloom": {
+        "strength": 1.0,
+        "radius": 0.5,
+        "threshold": 0.6
+      },
+      "audioStart": 120,
+      "lights": [
+        {
+          "type": "ambient",
+          "color": "#08040f",
+          "intensity": 0.45
+        },
+        {
+          "type": "point",
+          "color": "#ff8833",
+          "intensity": 3.0,
+          "position": [
+            0.8,
+            1.5,
+            1.2
+          ],
+          "distance": 7,
+          "castShadow": true,
+          "flicker": true,
+          "flickerSpeed": 8,
+          "flickerAmount": 0.4
+        },
+        {
+          "type": "hemisphere",
+          "color": "#1a1030",
+          "groundColor": "#0a1505",
+          "intensity": 0.5
+        }
+      ],
+      "objects": [
+        {
+          "name": "ground",
+          "shape": "plane",
+          "params": {
+            "width": 60,
+            "height": 60
+          },
+          "material": {
+            "color": "#1a2a10",
+            "roughness": 0.95
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "receiveShadow": true
+        },
+        {
+          "name": "tree-1",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5,
+            "trunkRadius": 0.3,
+            "canopyRadius": 2.2,
+            "layers": 3,
+            "canopyColor": "#0f2a0f"
+          },
+          "position": [
+            -5,
+            0,
+            -5
+          ]
+        },
+        {
+          "name": "tree-2",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 6,
+            "trunkRadius": 0.35,
+            "canopyRadius": 2.8,
+            "layers": 4,
+            "canopyColor": "#0f2a0f"
+          },
+          "position": [
+            6,
+            0,
+            -6
+          ]
+        },
+        {
+          "name": "chaz-sitting",
+          "shape": "figure",
+          "params": {
+            "height": 1.7,
+            "clothColor": "#5a4a30",
+            "skinColor": "#c8a882",
+            "pose": "sitting"
+          },
+          "position": [
+            0.8,
+            0.2,
+            1.5
+          ]
+        },
+        {
+          "name": "tinderbox",
+          "shape": "box",
+          "params": {
+            "width": 0.15,
+            "height": 0.08,
+            "depth": 0.12
+          },
+          "material": {
+            "color": "#888888",
+            "roughness": 0.3,
+            "metalness": 0.7
+          },
+          "position": [
+            0.5,
+            0.04,
+            1
+          ]
+        },
+        {
+          "name": "torch-shaft",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.035,
+            "height": 1
+          },
+          "material": {
+            "color": "#6b4226",
+            "roughness": 0.9
+          },
+          "position": [
+            0.8,
+            1,
+            1.2
+          ],
+          "rotation": [
+            0,
+            0,
+            15
+          ]
+        },
+        {
+          "name": "torch-flame",
+          "shape": "cone",
+          "params": {
+            "radius": 0.15,
+            "height": 0.4
+          },
+          "material": {
+            "color": "#ff6600",
+            "emissive": "#ff4400",
+            "emissiveIntensity": 3,
+            "type": "basic"
+          },
+          "position": [
+            0.75,
+            1.6,
+            1.18
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "scale": [
+                  0.1,
+                  0.1,
+                  0.1
+                ],
+                "opacity": 0.2
+              },
+              {
+                "time": 10,
+                "scale": [
+                  0.3,
+                  0.3,
+                  0.3
+                ],
+                "opacity": 0.5,
+                "easing": "easeIn"
+              },
+              {
+                "time": 20,
+                "scale": [
+                  0.7,
+                  0.7,
+                  0.7
+                ],
+                "opacity": 0.8,
+                "easing": "easeIn"
+              },
+              {
+                "time": 30,
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "opacity": 1,
+                "easing": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "backpack",
+          "shape": "box",
+          "params": {
+            "width": 0.5,
+            "height": 0.6,
+            "depth": 0.3
+          },
+          "material": {
+            "color": "#6b4226",
+            "roughness": 0.9
+          },
+          "position": [
+            1.8,
+            0.3,
+            1.8
+          ]
+        },
+        {
+          "name": "rocks",
+          "shape": "rocks",
+          "params": {
+            "count": 3,
+            "spread": 1,
+            "size": 0.3
+          },
+          "position": [
+            2,
+            0,
+            0.5
+          ]
+        }
+      ],
+      "particles": [
+        {
+          "name": "sparks",
+          "count": 30,
+          "spread": [
+            0.8,
+            1.5,
+            0.8
+          ],
+          "offset": [
+            0.5,
+            1,
+            1
+          ],
+          "color": "#ffaa22",
+          "size": 0.04,
+          "opacity": 1,
+          "driftSpeed": 2
+        },
+        {
+          "name": "sparks-2",
+          "count": 15,
+          "spread": [
+            0.5,
+            1,
+            0.5
+          ],
+          "offset": [
+            0.75,
+            1.5,
+            1.2
+          ],
+          "color": "#ff6600",
+          "size": 0.06,
+          "opacity": 0.9,
+          "driftSpeed": 1.5
+        }
+      ]
+    },
+    {
+      "title": "Chapter 13 - Scene 3: Cooking by the Fire",
+      "narration": "He sat on a stone upwind from the billowing smoke. He put the end of his sword into the fire and watched the meat start to cook.",
+      "background": "#12081c",
+      "fog": {
+        "color": "#161020",
+        "near": 10,
+        "far": 45
+      },
+      "camera": {
+        "position": [
+          5,
+          3.5,
+          8
+        ],
+        "target": [
+          0,
+          1.5,
+          0
+        ]
+      },
+      "bloom": {
+        "strength": 1.2,
+        "radius": 0.5,
+        "threshold": 0.5
+      },
+      "audioStart": 240,
+      "lights": [
+        {
+          "type": "ambient",
+          "color": "#060310",
+          "intensity": 0.3
+        },
+        {
+          "type": "point",
+          "color": "#ff7722",
+          "intensity": 5.25,
+          "position": [
+            0,
+            1.8,
+            0
+          ],
+          "distance": 14,
+          "castShadow": true,
+          "flicker": true,
+          "flickerSpeed": 5,
+          "flickerAmount": 0.25
+        },
+        {
+          "type": "point",
+          "color": "#ff4400",
+          "intensity": 1.8,
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "distance": 5,
+          "flicker": true,
+          "flickerSpeed": 7,
+          "flickerAmount": 0.35
+        }
+      ],
+      "objects": [
+        {
+          "name": "ground",
+          "shape": "plane",
+          "params": {
+            "width": 60,
+            "height": 60
+          },
+          "material": {
+            "color": "#1a2a10",
+            "roughness": 0.95
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "receiveShadow": true
+        },
+        {
+          "name": "tree-1",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5,
+            "trunkRadius": 0.3,
+            "canopyRadius": 2.2,
+            "layers": 3,
+            "canopyColor": "#0f2a0f"
+          },
+          "position": [
+            -5,
+            0,
+            -5
+          ]
+        },
+        {
+          "name": "tree-2",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 6,
+            "trunkRadius": 0.35,
+            "canopyRadius": 2.8,
+            "layers": 4,
+            "canopyColor": "#0f2a0f"
+          },
+          "position": [
+            6,
+            0,
+            -6
+          ]
+        },
+        {
+          "name": "tree-3",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 4.5,
+            "trunkRadius": 0.25,
+            "canopyRadius": 2,
+            "layers": 3
+          },
+          "position": [
+            -7,
+            0,
+            -8
+          ]
+        },
+        {
+          "name": "tree-4",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5.5,
+            "trunkRadius": 0.3,
+            "canopyRadius": 2.5,
+            "layers": 3
+          },
+          "position": [
+            4,
+            0,
+            -9
+          ]
+        },
+        {
+          "name": "tree-5",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 4,
+            "trunkRadius": 0.2,
+            "canopyRadius": 1.8,
+            "layers": 3
+          },
+          "position": [
+            -9,
+            0,
+            -3
+          ]
+        },
+        {
+          "name": "campfire",
+          "shape": "campfire",
+          "params": {
+            "radius": 0.8,
+            "logs": 5,
+            "flames": 6,
+            "flameHeight": 1.8
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "smoke-column",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.8,
+            "height": 10
+          },
+          "material": {
+            "color": "#cccccc",
+            "opacity": 0.08,
+            "type": "basic"
+          },
+          "position": [
+            0,
+            6,
+            0
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "scale": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              {
+                "time": 140,
+                "scale": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              {
+                "time": 160,
+                "scale": [
+                  2.5,
+                  0.3,
+                  2.5
+                ],
+                "easing": "easeOut"
+              },
+              {
+                "time": 170,
+                "scale": [
+                  3,
+                  0.1,
+                  3
+                ],
+                "easing": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "chaz-sitting",
+          "shape": "figure",
+          "params": {
+            "height": 1.7,
+            "clothColor": "#5a4a30",
+            "skinColor": "#c8a882",
+            "pose": "sitting"
+          },
+          "position": [
+            2.5,
+            0.35,
+            1
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "rotation": [
+                  0,
+                  -20,
+                  0
+                ]
+              },
+              {
+                "time": 30,
+                "rotation": [
+                  0,
+                  -10,
+                  0
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 60,
+                "rotation": [
+                  0,
+                  -25,
+                  0
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 90,
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 120,
+                "rotation": [
+                  0,
+                  -15,
+                  0
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 150,
+                "rotation": [
+                  0,
+                  -20,
+                  0
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "rock-seat",
+          "shape": "rocks",
+          "params": {
+            "count": 1,
+            "size": 0.55,
+            "color": "#555555"
+          },
+          "position": [
+            2.5,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "rapier-with-meat",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.015,
+            "height": 1.5
+          },
+          "material": {
+            "color": "#cccccc",
+            "roughness": 0.2,
+            "metalness": 0.8
+          },
+          "position": [
+            1.2,
+            0.9,
+            0.5
+          ],
+          "rotation": [
+            20,
+            0,
+            -50
+          ]
+        },
+        {
+          "name": "meat-chunk",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.1
+          },
+          "material": {
+            "color": "#8b4513",
+            "roughness": 0.9
+          },
+          "position": [
+            0.5,
+            0.7,
+            0.3
+          ]
+        },
+        {
+          "name": "torch-in-ground",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.035,
+            "height": 1.2
+          },
+          "material": {
+            "color": "#6b4226",
+            "roughness": 0.9
+          },
+          "position": [
+            3.2,
+            0.6,
+            0.5
+          ]
+        },
+        {
+          "name": "torch-flame-2",
+          "shape": "cone",
+          "params": {
+            "radius": 0.12,
+            "height": 0.35
+          },
+          "material": {
+            "color": "#ff6600",
+            "emissive": "#ff4400",
+            "emissiveIntensity": 2.5,
+            "type": "basic"
+          },
+          "position": [
+            3.2,
+            1.35,
+            0.5
+          ]
+        },
+        {
+          "name": "leopard-corpse",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.3,
+            "height": 1.5
+          },
+          "material": {
+            "color": "#9a7a3a",
+            "roughness": 0.85
+          },
+          "position": [
+            -3,
+            0.2,
+            2
+          ],
+          "rotation": [
+            90,
+            0,
+            15
+          ]
+        },
+        {
+          "name": "bush-1",
+          "shape": "bush",
+          "params": {
+            "count": 4,
+            "size": 0.45,
+            "color": "#122a10"
+          },
+          "position": [
+            -4,
+            0,
+            2
+          ]
+        },
+        {
+          "name": "bush-2",
+          "shape": "bush",
+          "params": {
+            "count": 3,
+            "size": 0.35,
+            "color": "#152a12"
+          },
+          "position": [
+            5,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "rocks-ring",
+          "shape": "rocks",
+          "params": {
+            "count": 5,
+            "spread": 2,
+            "size": 0.25,
+            "color": "#4a4a4a"
+          },
+          "position": [
+            -1.5,
+            0,
+            2.5
+          ]
+        }
+      ],
+      "particles": [
+        {
+          "name": "embers",
+          "count": 40,
+          "spread": [
+            2,
+            6,
+            2
+          ],
+          "offset": [
+            0,
+            4,
+            0
+          ],
+          "color": "#ff6622",
+          "size": 0.06,
+          "opacity": 0.9,
+          "driftSpeed": 1.2
+        },
+        {
+          "name": "smoke",
+          "count": 50,
+          "spread": [
+            3,
+            12,
+            3
+          ],
+          "offset": [
+            0,
+            8,
+            0
+          ],
+          "color": "#aaaaaa",
+          "size": 0.2,
+          "opacity": 0.08,
+          "driftSpeed": 0.5
+        }
+      ]
+    },
+    {
+      "title": "Chapter 13 - Scene 4: The Troll Appears",
+      "narration": "A sudden breeze flattened the plume of smoke, revealing a face staring back at him. It wasn't human, not even close. Chaz knew a troll when he saw one.",
+      "background": "#0e081a",
+      "fog": {
+        "color": "#120e24",
+        "near": 5,
+        "far": 32
+      },
+      "camera": {
+        "position": [
+          5,
+          3,
+          5
+        ],
+        "target": [
+          0,
+          2,
+          -1
+        ]
+      },
+      "bloom": {
+        "strength": 1.0,
+        "radius": 0.4,
+        "threshold": 0.6
+      },
+      "audioStart": 420,
+      "lights": [
+        {
+          "type": "ambient",
+          "color": "#050310",
+          "intensity": 0.24
+        },
+        {
+          "type": "point",
+          "color": "#ff6622",
+          "intensity": 4.5,
+          "position": [
+            0,
+            1.8,
+            0
+          ],
+          "distance": 10,
+          "castShadow": true,
+          "flicker": true,
+          "flickerSpeed": 6,
+          "flickerAmount": 0.3
+        },
+        {
+          "type": "point",
+          "color": "#ff3300",
+          "intensity": 1.2,
+          "position": [
+            0,
+            0.3,
+            0
+          ],
+          "distance": 5,
+          "flicker": true,
+          "flickerSpeed": 9,
+          "flickerAmount": 0.4
+        },
+        {
+          "type": "point",
+          "color": "#cccc00",
+          "intensity": 0.6,
+          "position": [
+            -2.5,
+            3,
+            -2
+          ],
+          "distance": 3
+        }
+      ],
+      "objects": [
+        {
+          "name": "ground",
+          "shape": "plane",
+          "params": {
+            "width": 60,
+            "height": 60
+          },
+          "material": {
+            "color": "#1a2a10",
+            "roughness": 0.95
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "receiveShadow": true
+        },
+        {
+          "name": "campfire",
+          "shape": "campfire",
+          "params": {
+            "radius": 0.8,
+            "logs": 5,
+            "flames": 6,
+            "flameHeight": 1.5
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "chaz-sitting",
+          "shape": "figure",
+          "params": {
+            "height": 1.7,
+            "clothColor": "#5a4a30",
+            "skinColor": "#c8a882",
+            "pose": "sitting"
+          },
+          "position": [
+            2.5,
+            0.35,
+            1
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "rotation": [
+                  0,
+                  -20,
+                  0
+                ]
+              },
+              {
+                "time": 5,
+                "rotation": [
+                  0,
+                  -20,
+                  0
+                ]
+              },
+              {
+                "time": 7,
+                "rotation": [
+                  0,
+                  -150,
+                  0
+                ],
+                "easing": "easeOut"
+              },
+              {
+                "time": 10,
+                "rotation": [
+                  0,
+                  -160,
+                  0
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "rock-seat",
+          "shape": "rocks",
+          "params": {
+            "count": 1,
+            "size": 0.55,
+            "color": "#555555"
+          },
+          "position": [
+            2.5,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "troll-body",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.5,
+            "height": 3,
+            "segments": 8
+          },
+          "material": {
+            "color": "#2a4a2a",
+            "roughness": 0.85,
+            "flatShading": true
+          },
+          "position": [
+            -2.5,
+            1.5,
+            -2
+          ],
+          "castShadow": true,
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -2.5,
+                  -1,
+                  -2
+                ],
+                "scale": [
+                  1,
+                  0.5,
+                  1
+                ]
+              },
+              {
+                "time": 3,
+                "position": [
+                  -2.5,
+                  -1,
+                  -2
+                ],
+                "scale": [
+                  1,
+                  0.5,
+                  1
+                ]
+              },
+              {
+                "time": 8,
+                "position": [
+                  -2.5,
+                  1.5,
+                  -2
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "easing": "easeOutCubic"
+              },
+              {
+                "time": 60,
+                "position": [
+                  -2.5,
+                  1.5,
+                  -2
+                ]
+              },
+              {
+                "time": 100,
+                "position": [
+                  -2.2,
+                  1.5,
+                  -1.5
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 160,
+                "position": [
+                  -1.8,
+                  1.5,
+                  -1
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 200,
+                "position": [
+                  -1.5,
+                  1.5,
+                  -0.8
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "troll-head",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.45
+          },
+          "material": {
+            "color": "#3a5a3a",
+            "roughness": 0.8,
+            "flatShading": true
+          },
+          "position": [
+            -2.5,
+            3.4,
+            -2
+          ],
+          "castShadow": true,
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -2.5,
+                  0.4,
+                  -2
+                ]
+              },
+              {
+                "time": 3,
+                "position": [
+                  -2.5,
+                  0.4,
+                  -2
+                ]
+              },
+              {
+                "time": 8,
+                "position": [
+                  -2.5,
+                  3.4,
+                  -2
+                ],
+                "easing": "easeOutCubic"
+              },
+              {
+                "time": 60,
+                "position": [
+                  -2.5,
+                  3.4,
+                  -2
+                ]
+              },
+              {
+                "time": 100,
+                "position": [
+                  -2.2,
+                  3.4,
+                  -1.5
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 160,
+                "position": [
+                  -1.8,
+                  3.4,
+                  -1
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 200,
+                "position": [
+                  -1.5,
+                  3.4,
+                  -0.8
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "troll-nose",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.05,
+            "height": 0.7,
+            "segments": 6
+          },
+          "material": {
+            "color": "#3a5a3a",
+            "roughness": 0.8,
+            "flatShading": true
+          },
+          "position": [
+            -2.5,
+            3.1,
+            -1.5
+          ],
+          "rotation": [
+            35,
+            0,
+            0
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -2.5,
+                  0.1,
+                  -1.5
+                ]
+              },
+              {
+                "time": 3,
+                "position": [
+                  -2.5,
+                  0.1,
+                  -1.5
+                ]
+              },
+              {
+                "time": 8,
+                "position": [
+                  -2.5,
+                  3.1,
+                  -1.5
+                ],
+                "easing": "easeOutCubic"
+              },
+              {
+                "time": 100,
+                "position": [
+                  -2.2,
+                  3.1,
+                  -1
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 200,
+                "position": [
+                  -1.5,
+                  3.1,
+                  -0.3
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "troll-eye-L",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.07
+          },
+          "material": {
+            "color": "#cccc00",
+            "emissive": "#aaaa00",
+            "emissiveIntensity": 2,
+            "type": "basic"
+          },
+          "position": [
+            -2.65,
+            3.45,
+            -1.65
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0
+              },
+              {
+                "time": 6,
+                "opacity": 0
+              },
+              {
+                "time": 8,
+                "opacity": 1,
+                "easing": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "name": "troll-eye-R",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.07
+          },
+          "material": {
+            "color": "#cccc00",
+            "emissive": "#aaaa00",
+            "emissiveIntensity": 2,
+            "type": "basic"
+          },
+          "position": [
+            -2.35,
+            3.45,
+            -1.65
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0
+              },
+              {
+                "time": 6,
+                "opacity": 0
+              },
+              {
+                "time": 8,
+                "opacity": 1,
+                "easing": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "name": "troll-spear",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.03,
+            "height": 2.5
+          },
+          "material": {
+            "color": "#5a3a20",
+            "roughness": 0.9
+          },
+          "position": [
+            -2,
+            1.8,
+            -1.8
+          ],
+          "rotation": [
+            0,
+            0,
+            5
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -2,
+                  -0.5,
+                  -1.8
+                ]
+              },
+              {
+                "time": 8,
+                "position": [
+                  -2,
+                  1.8,
+                  -1.8
+                ],
+                "easing": "easeOutCubic"
+              }
+            ]
+          }
+        },
+        {
+          "name": "spear-tip",
+          "shape": "cone",
+          "params": {
+            "radius": 0.06,
+            "height": 0.25,
+            "segments": 6
+          },
+          "material": {
+            "color": "#777777",
+            "roughness": 0.4,
+            "metalness": 0.5,
+            "flatShading": true
+          },
+          "position": [
+            -2,
+            3.15,
+            -1.8
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -2,
+                  0.5,
+                  -1.8
+                ]
+              },
+              {
+                "time": 8,
+                "position": [
+                  -2,
+                  3.15,
+                  -1.8
+                ],
+                "easing": "easeOutCubic"
+              }
+            ]
+          }
+        },
+        {
+          "name": "rapier",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.015,
+            "height": 1.2
+          },
+          "material": {
+            "color": "#cccccc",
+            "roughness": 0.2,
+            "metalness": 0.8
+          },
+          "position": [
+            2.2,
+            0.8,
+            0.6
+          ],
+          "rotation": [
+            20,
+            0,
+            -50
+          ]
+        },
+        {
+          "name": "torch-in-ground",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.035,
+            "height": 1.2
+          },
+          "material": {
+            "color": "#6b4226",
+            "roughness": 0.9
+          },
+          "position": [
+            3.5,
+            0.6,
+            0
+          ]
+        },
+        {
+          "name": "torch-flame",
+          "shape": "cone",
+          "params": {
+            "radius": 0.12,
+            "height": 0.35
+          },
+          "material": {
+            "color": "#ff6600",
+            "emissive": "#ff4400",
+            "emissiveIntensity": 2,
+            "type": "basic"
+          },
+          "position": [
+            3.5,
+            1.35,
+            0
+          ]
+        },
+        {
+          "name": "tree-1",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5,
+            "trunkRadius": 0.3,
+            "canopyRadius": 2.2,
+            "layers": 3,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            -6,
+            0,
+            -7
+          ]
+        },
+        {
+          "name": "tree-2",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 6,
+            "trunkRadius": 0.35,
+            "canopyRadius": 2.8,
+            "layers": 3,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            6,
+            0,
+            -6
+          ]
+        },
+        {
+          "name": "tree-3",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5,
+            "trunkRadius": 0.28,
+            "canopyRadius": 2,
+            "layers": 3,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            8,
+            0,
+            -3
+          ]
+        }
+      ],
+      "particles": [
+        {
+          "name": "embers",
+          "count": 30,
+          "spread": [
+            2,
+            5,
+            2
+          ],
+          "offset": [
+            0,
+            3,
+            0
+          ],
+          "color": "#ff6622",
+          "size": 0.06,
+          "opacity": 0.85,
+          "driftSpeed": 1
+        }
+      ]
+    },
+    {
+      "title": "Chapter 13 - Scene 5: Speared",
+      "narration": "With a speed Chaz hadn't thought it capable of, the troll hurled its spear at Chaz, piercing him just below his ribcage.",
+      "background": "#0c0614",
+      "fog": {
+        "color": "#100a1e",
+        "near": 4,
+        "far": 28
+      },
+      "camera": {
+        "position": [
+          4,
+          2,
+          4
+        ],
+        "target": [
+          1.5,
+          1,
+          1
+        ]
+      },
+      "bloom": {
+        "strength": 0.9,
+        "radius": 0.4,
+        "threshold": 0.6
+      },
+      "audioStart": 660,
+      "lights": [
+        {
+          "type": "ambient",
+          "color": "#040208",
+          "intensity": 0.24
+        },
+        {
+          "type": "point",
+          "color": "#ff4411",
+          "intensity": 3.75,
+          "position": [
+            0,
+            1.5,
+            0
+          ],
+          "distance": 8,
+          "castShadow": true,
+          "flicker": true,
+          "flickerSpeed": 8,
+          "flickerAmount": 0.35
+        },
+        {
+          "type": "point",
+          "color": "#ff2200",
+          "intensity": 0.9,
+          "position": [
+            2,
+            0.5,
+            1.5
+          ],
+          "distance": 4
+        }
+      ],
+      "objects": [
+        {
+          "name": "ground",
+          "shape": "plane",
+          "params": {
+            "width": 60,
+            "height": 60
+          },
+          "material": {
+            "color": "#1a2a10",
+            "roughness": 0.95
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "receiveShadow": true
+        },
+        {
+          "name": "campfire",
+          "shape": "campfire",
+          "params": {
+            "radius": 0.8,
+            "logs": 5,
+            "flames": 5,
+            "flameHeight": 1.3
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "chaz-fallen",
+          "shape": "figure",
+          "params": {
+            "height": 1.7,
+            "clothColor": "#5a4a30",
+            "skinColor": "#c8a882",
+            "pose": "lying"
+          },
+          "position": [
+            2,
+            0.3,
+            2
+          ],
+          "rotation": [
+            0,
+            -30,
+            0
+          ]
+        },
+        {
+          "name": "spear-in-chaz",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.03,
+            "height": 2
+          },
+          "material": {
+            "color": "#5a3a20",
+            "roughness": 0.9
+          },
+          "position": [
+            2,
+            0.6,
+            1.8
+          ],
+          "rotation": [
+            15,
+            0,
+            70
+          ]
+        },
+        {
+          "name": "blood-pool",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.5,
+            "height": 0.02
+          },
+          "material": {
+            "color": "#440000",
+            "roughness": 1
+          },
+          "position": [
+            2,
+            0.01,
+            2
+          ]
+        },
+        {
+          "name": "troll-advancing",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.5,
+            "height": 3,
+            "segments": 8
+          },
+          "material": {
+            "color": "#2a4a2a",
+            "roughness": 0.85,
+            "flatShading": true
+          },
+          "position": [
+            -1.2,
+            1.5,
+            -0.5
+          ],
+          "castShadow": true,
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -2.5,
+                  1.5,
+                  -2
+                ]
+              },
+              {
+                "time": 5,
+                "position": [
+                  -2,
+                  1.5,
+                  -1.5
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 20,
+                "position": [
+                  -1.5,
+                  1.5,
+                  -0.8
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 60,
+                "position": [
+                  -0.5,
+                  1.5,
+                  0.5
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 100,
+                "position": [
+                  0.5,
+                  1.5,
+                  1
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 150,
+                "position": [
+                  1,
+                  1.5,
+                  1.2
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "troll-head",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.45
+          },
+          "material": {
+            "color": "#3a5a3a",
+            "roughness": 0.8,
+            "flatShading": true
+          },
+          "position": [
+            -1.2,
+            3.4,
+            -0.5
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -2.5,
+                  3.4,
+                  -2
+                ]
+              },
+              {
+                "time": 5,
+                "position": [
+                  -2,
+                  3.4,
+                  -1.5
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 20,
+                "position": [
+                  -1.5,
+                  3.4,
+                  -0.8
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 60,
+                "position": [
+                  -0.5,
+                  3.4,
+                  0.5
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 100,
+                "position": [
+                  0.5,
+                  3.4,
+                  1
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 150,
+                "position": [
+                  1,
+                  3.4,
+                  1.2
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "troll-eyes",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.08
+          },
+          "material": {
+            "color": "#ff3300",
+            "emissive": "#ff2200",
+            "emissiveIntensity": 2.5,
+            "type": "basic"
+          },
+          "position": [
+            -1.2,
+            3.5,
+            -0.15
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -2.5,
+                  3.5,
+                  -1.65
+                ]
+              },
+              {
+                "time": 60,
+                "position": [
+                  -0.5,
+                  3.5,
+                  0.85
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 150,
+                "position": [
+                  1,
+                  3.5,
+                  1.55
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "troll-nose",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.05,
+            "height": 0.7,
+            "segments": 6
+          },
+          "material": {
+            "color": "#3a5a3a",
+            "roughness": 0.8,
+            "flatShading": true
+          },
+          "position": [
+            -1.2,
+            3.1,
+            -0.1
+          ],
+          "rotation": [
+            30,
+            0,
+            0
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -2.5,
+                  3.1,
+                  -1.6
+                ]
+              },
+              {
+                "time": 60,
+                "position": [
+                  -0.5,
+                  3.1,
+                  0.9
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 150,
+                "position": [
+                  1,
+                  3.1,
+                  1.6
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "rapier-dropped",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.015,
+            "height": 1.2
+          },
+          "material": {
+            "color": "#cccccc",
+            "roughness": 0.2,
+            "metalness": 0.8
+          },
+          "position": [
+            2.8,
+            0.05,
+            0.5
+          ],
+          "rotation": [
+            90,
+            20,
+            0
+          ]
+        },
+        {
+          "name": "torch-in-ground",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.035,
+            "height": 1.2
+          },
+          "material": {
+            "color": "#6b4226",
+            "roughness": 0.9
+          },
+          "position": [
+            3.2,
+            0.6,
+            0
+          ]
+        },
+        {
+          "name": "torch-flame",
+          "shape": "cone",
+          "params": {
+            "radius": 0.12,
+            "height": 0.35
+          },
+          "material": {
+            "color": "#ff6600",
+            "emissive": "#ff4400",
+            "emissiveIntensity": 2,
+            "type": "basic"
+          },
+          "position": [
+            3.2,
+            1.35,
+            0
+          ]
+        }
+      ],
+      "particles": [
+        {
+          "name": "embers",
+          "count": 25,
+          "spread": [
+            2,
+            4,
+            2
+          ],
+          "offset": [
+            0,
+            2.5,
+            0
+          ],
+          "color": "#ff4422",
+          "size": 0.06,
+          "opacity": 0.8,
+          "driftSpeed": 1
+        }
+      ]
+    },
+    {
+      "title": "Chapter 13 - Scene 6: Butterbean Attacks",
+      "narration": "A blur of grey fur leaped past him. The wolf tore into the troll, dragging it backward into the campfire.",
+      "background": "#0e081a",
+      "fog": {
+        "color": "#120e24",
+        "near": 5,
+        "far": 30
+      },
+      "camera": {
+        "position": [
+          5,
+          4,
+          6
+        ],
+        "target": [
+          0,
+          1.5,
+          0
+        ]
+      },
+      "bloom": {
+        "strength": 1.5,
+        "radius": 0.6,
+        "threshold": 0.4
+      },
+      "audioStart": 900,
+      "lights": [
+        {
+          "type": "ambient",
+          "color": "#060310",
+          "intensity": 0.36
+        },
+        {
+          "type": "point",
+          "color": "#ff5511",
+          "intensity": 6.75,
+          "position": [
+            0,
+            2,
+            0
+          ],
+          "distance": 14,
+          "castShadow": true,
+          "flicker": true,
+          "flickerSpeed": 10,
+          "flickerAmount": 0.4
+        },
+        {
+          "type": "point",
+          "color": "#ff8844",
+          "intensity": 3.0,
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "distance": 6,
+          "flicker": true,
+          "flickerSpeed": 12,
+          "flickerAmount": 0.5
+        }
+      ],
+      "objects": [
+        {
+          "name": "ground",
+          "shape": "plane",
+          "params": {
+            "width": 60,
+            "height": 60
+          },
+          "material": {
+            "color": "#1a2a10",
+            "roughness": 0.95
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "receiveShadow": true
+        },
+        {
+          "name": "campfire-large",
+          "shape": "campfire",
+          "params": {
+            "radius": 1,
+            "logs": 6,
+            "flames": 8,
+            "flameHeight": 2.5
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "troll-in-fire",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.5,
+            "height": 2.8,
+            "segments": 8
+          },
+          "material": {
+            "color": "#2a3a1a",
+            "emissive": "#441100",
+            "emissiveIntensity": 0.8,
+            "roughness": 0.9,
+            "flatShading": true
+          },
+          "position": [
+            -0.3,
+            0.5,
+            0
+          ],
+          "rotation": [
+            55,
+            0,
+            20
+          ],
+          "castShadow": true,
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -1.5,
+                  1.5,
+                  -1.5
+                ],
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "time": 4,
+                "position": [
+                  -1,
+                  1.2,
+                  -1
+                ],
+                "rotation": [
+                  10,
+                  0,
+                  5
+                ],
+                "easing": "easeIn"
+              },
+              {
+                "time": 6,
+                "position": [
+                  -0.3,
+                  0.5,
+                  0
+                ],
+                "rotation": [
+                  55,
+                  0,
+                  20
+                ],
+                "easing": "easeOut"
+              },
+              {
+                "time": 60,
+                "position": [
+                  -0.3,
+                  0.5,
+                  0
+                ],
+                "rotation": [
+                  55,
+                  0,
+                  20
+                ]
+              },
+              {
+                "time": 120,
+                "position": [
+                  -0.3,
+                  0.3,
+                  0
+                ],
+                "rotation": [
+                  65,
+                  0,
+                  20
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "troll-head-fire",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.45
+          },
+          "material": {
+            "color": "#3a4a2a",
+            "emissive": "#331100",
+            "emissiveIntensity": 0.8,
+            "roughness": 0.9,
+            "flatShading": true
+          },
+          "position": [
+            -0.3,
+            0.4,
+            -0.9
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -1.5,
+                  3.4,
+                  -1.5
+                ]
+              },
+              {
+                "time": 4,
+                "position": [
+                  -1,
+                  2.8,
+                  -1
+                ],
+                "easing": "easeIn"
+              },
+              {
+                "time": 6,
+                "position": [
+                  -0.3,
+                  0.4,
+                  -0.9
+                ],
+                "easing": "easeOut"
+              },
+              {
+                "time": 120,
+                "position": [
+                  -0.3,
+                  0.2,
+                  -0.9
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "wolf-body",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.18,
+            "height": 1.2,
+            "segments": 8
+          },
+          "material": {
+            "color": "#808080",
+            "roughness": 0.75,
+            "flatShading": true
+          },
+          "position": [
+            1,
+            0.5,
+            -1
+          ],
+          "rotation": [
+            0,
+            30,
+            70
+          ],
+          "castShadow": true,
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  6,
+                  0.5,
+                  4
+                ],
+                "opacity": 0
+              },
+              {
+                "time": 2,
+                "position": [
+                  6,
+                  0.5,
+                  4
+                ],
+                "opacity": 1,
+                "easing": "easeIn"
+              },
+              {
+                "time": 4,
+                "position": [
+                  3,
+                  1.5,
+                  1
+                ],
+                "easing": "easeIn"
+              },
+              {
+                "time": 5.5,
+                "position": [
+                  1,
+                  0.5,
+                  -1
+                ],
+                "easing": "easeOut"
+              },
+              {
+                "time": 30,
+                "position": [
+                  1.5,
+                  0.5,
+                  -0.5
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 60,
+                "position": [
+                  0.8,
+                  0.5,
+                  -0.8
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 120,
+                "position": [
+                  0.3,
+                  0.3,
+                  -0.3
+                ],
+                "easing": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "wolf-head",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.16
+          },
+          "material": {
+            "color": "#909090",
+            "roughness": 0.7,
+            "flatShading": true
+          },
+          "position": [
+            0.5,
+            0.7,
+            -0.6
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  5.5,
+                  0.7,
+                  3.6
+                ],
+                "opacity": 0
+              },
+              {
+                "time": 2,
+                "position": [
+                  5.5,
+                  0.7,
+                  3.6
+                ],
+                "opacity": 1
+              },
+              {
+                "time": 4,
+                "position": [
+                  2.5,
+                  1.7,
+                  0.6
+                ],
+                "easing": "easeIn"
+              },
+              {
+                "time": 5.5,
+                "position": [
+                  0.5,
+                  0.7,
+                  -0.6
+                ],
+                "easing": "easeOut"
+              },
+              {
+                "time": 30,
+                "position": [
+                  1,
+                  0.7,
+                  -0.1
+                ]
+              },
+              {
+                "time": 60,
+                "position": [
+                  0.3,
+                  0.7,
+                  -0.4
+                ]
+              },
+              {
+                "time": 120,
+                "position": [
+                  -0.1,
+                  0.5,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "wolf-snout",
+          "shape": "cone",
+          "params": {
+            "radius": 0.07,
+            "height": 0.22,
+            "segments": 6
+          },
+          "material": {
+            "color": "#707070",
+            "roughness": 0.7,
+            "flatShading": true
+          },
+          "position": [
+            0.3,
+            0.65,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            30,
+            70
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  5.3,
+                  0.65,
+                  3.4
+                ],
+                "opacity": 0
+              },
+              {
+                "time": 2,
+                "opacity": 1
+              },
+              {
+                "time": 5.5,
+                "position": [
+                  0.3,
+                  0.65,
+                  -0.4
+                ],
+                "easing": "easeOut"
+              },
+              {
+                "time": 120,
+                "position": [
+                  -0.3,
+                  0.45,
+                  0.2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "chaz-fallen",
+          "shape": "figure",
+          "params": {
+            "height": 1.7,
+            "clothColor": "#5a4a30",
+            "skinColor": "#c8a882",
+            "pose": "lying"
+          },
+          "position": [
+            3,
+            0.3,
+            2.5
+          ],
+          "rotation": [
+            0,
+            -20,
+            0
+          ]
+        },
+        {
+          "name": "blood-pool",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.6,
+            "height": 0.02
+          },
+          "material": {
+            "color": "#330000",
+            "roughness": 1
+          },
+          "position": [
+            3,
+            0.01,
+            2.5
+          ]
+        },
+        {
+          "name": "tree-1",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5,
+            "trunkRadius": 0.3,
+            "canopyRadius": 2.2,
+            "layers": 3,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            -6,
+            0,
+            -7
+          ]
+        },
+        {
+          "name": "tree-2",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 6,
+            "trunkRadius": 0.35,
+            "canopyRadius": 2.8,
+            "layers": 3,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            7,
+            0,
+            -6
+          ]
+        }
+      ],
+      "particles": [
+        {
+          "name": "embers-eruption",
+          "count": 80,
+          "spread": [
+            5,
+            10,
+            5
+          ],
+          "offset": [
+            0,
+            5,
+            0
+          ],
+          "color": "#ff5522",
+          "size": 0.09,
+          "opacity": 0.95,
+          "driftSpeed": 2
+        },
+        {
+          "name": "sparks",
+          "count": 40,
+          "spread": [
+            3,
+            4,
+            3
+          ],
+          "offset": [
+            0,
+            2.5,
+            0
+          ],
+          "color": "#ffcc00",
+          "size": 0.05,
+          "opacity": 1,
+          "driftSpeed": 2.5
+        }
+      ]
+    },
+    {
+      "title": "Chapter 13 - Scene 7: Katherine Returns",
+      "narration": "Katherine sat cross-legged on the ground, and rested Chaz's head in her lap. She took a long pull from the waterskin. \"Aaaahhh... That's the stuff.\"",
+      "background": "#12091e",
+      "fog": {
+        "color": "#141022",
+        "near": 8,
+        "far": 38
+      },
+      "camera": {
+        "position": [
+          3,
+          2.5,
+          5.5
+        ],
+        "target": [
+          0.5,
+          1,
+          1
+        ]
+      },
+      "bloom": {
+        "strength": 0.6,
+        "radius": 0.4,
+        "threshold": 0.7
+      },
+      "audioStart": 1200,
+      "lights": [
+        {
+          "type": "ambient",
+          "color": "#08051a",
+          "intensity": 0.6
+        },
+        {
+          "type": "point",
+          "color": "#ff7733",
+          "intensity": 2.7,
+          "position": [
+            0,
+            1.2,
+            0
+          ],
+          "distance": 8,
+          "castShadow": true,
+          "flicker": true,
+          "flickerSpeed": 4,
+          "flickerAmount": 0.2
+        },
+        {
+          "type": "point",
+          "color": "#ff5522",
+          "intensity": 0.75,
+          "position": [
+            0,
+            0.3,
+            0
+          ],
+          "distance": 4,
+          "flicker": true,
+          "flickerSpeed": 6,
+          "flickerAmount": 0.25
+        }
+      ],
+      "objects": [
+        {
+          "name": "ground",
+          "shape": "plane",
+          "params": {
+            "width": 60,
+            "height": 60
+          },
+          "material": {
+            "color": "#1a2a10",
+            "roughness": 0.95
+          },
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "receiveShadow": true
+        },
+        {
+          "name": "campfire-low",
+          "shape": "campfire",
+          "params": {
+            "radius": 0.8,
+            "logs": 5,
+            "flames": 4,
+            "flameHeight": 0.8
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "charred-remains",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.4,
+            "height": 0.3
+          },
+          "material": {
+            "color": "#0a0a0a",
+            "roughness": 1
+          },
+          "position": [
+            0,
+            0.15,
+            -0.4
+          ]
+        },
+        {
+          "name": "katherine",
+          "shape": "figure",
+          "params": {
+            "height": 1.6,
+            "clothColor": "#3a5a3a",
+            "skinColor": "#c8a882",
+            "pose": "sitting"
+          },
+          "position": [
+            1,
+            0.1,
+            1.5
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  -6,
+                  0.1,
+                  5
+                ],
+                "opacity": 0
+              },
+              {
+                "time": 3,
+                "position": [
+                  -6,
+                  0.1,
+                  5
+                ],
+                "opacity": 1,
+                "easing": "easeIn"
+              },
+              {
+                "time": 15,
+                "position": [
+                  -2,
+                  0.1,
+                  3
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 25,
+                "position": [
+                  1,
+                  0.1,
+                  1.5
+                ],
+                "easing": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "chaz-lying",
+          "shape": "figure",
+          "params": {
+            "height": 1.7,
+            "clothColor": "#5a4a30",
+            "skinColor": "#c8a882",
+            "pose": "lying"
+          },
+          "position": [
+            1,
+            0.15,
+            2
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ]
+        },
+        {
+          "name": "waterskin",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.1
+          },
+          "material": {
+            "color": "#8b6b4a",
+            "roughness": 0.85
+          },
+          "position": [
+            0.6,
+            0.5,
+            1.3
+          ],
+          "scale": [
+            1,
+            1.4,
+            0.8
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "opacity": 0
+              },
+              {
+                "time": 25,
+                "opacity": 0
+              },
+              {
+                "time": 28,
+                "opacity": 1,
+                "easing": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "name": "wolf-resting-body",
+          "shape": "cylinder",
+          "params": {
+            "radius": 0.18,
+            "height": 1,
+            "segments": 8
+          },
+          "material": {
+            "color": "#808080",
+            "roughness": 0.75,
+            "flatShading": true
+          },
+          "position": [
+            2.8,
+            0.15,
+            0.3
+          ],
+          "rotation": [
+            85,
+            0,
+            30
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  4,
+                  0.15,
+                  3
+                ]
+              },
+              {
+                "time": 20,
+                "position": [
+                  3.5,
+                  0.15,
+                  1.5
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 40,
+                "position": [
+                  2.8,
+                  0.15,
+                  0.3
+                ],
+                "easing": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "wolf-resting-head",
+          "shape": "sphere",
+          "params": {
+            "radius": 0.16
+          },
+          "material": {
+            "color": "#909090",
+            "roughness": 0.7,
+            "flatShading": true
+          },
+          "position": [
+            2.4,
+            0.22,
+            0
+          ],
+          "animation": {
+            "keyframes": [
+              {
+                "time": 0,
+                "position": [
+                  3.6,
+                  0.22,
+                  2.6
+                ]
+              },
+              {
+                "time": 20,
+                "position": [
+                  3.1,
+                  0.22,
+                  1.1
+                ],
+                "easing": "easeInOut"
+              },
+              {
+                "time": 40,
+                "position": [
+                  2.4,
+                  0.22,
+                  0
+                ],
+                "easing": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tree-1",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 5,
+            "trunkRadius": 0.3,
+            "canopyRadius": 2.2,
+            "layers": 3,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            -5,
+            0,
+            -5
+          ]
+        },
+        {
+          "name": "tree-2",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 6,
+            "trunkRadius": 0.35,
+            "canopyRadius": 2.8,
+            "layers": 3,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            6,
+            0,
+            -6
+          ]
+        },
+        {
+          "name": "tree-3",
+          "shape": "lowpolyTree",
+          "params": {
+            "trunkHeight": 4.5,
+            "trunkRadius": 0.25,
+            "canopyRadius": 2,
+            "layers": 3,
+            "canopyColor": "#0a1a0a"
+          },
+          "position": [
+            -7,
+            0,
+            -8
+          ]
+        },
+        {
+          "name": "bush-1",
+          "shape": "bush",
+          "params": {
+            "count": 4,
+            "size": 0.4,
+            "color": "#122a10"
+          },
+          "position": [
+            -3,
+            0,
+            2
+          ]
+        },
+        {
+          "name": "rocks-1",
+          "shape": "rocks",
+          "params": {
+            "count": 3,
+            "spread": 1,
+            "size": 0.25
+          },
+          "position": [
+            -1.5,
+            0,
+            2.5
+          ]
+        }
+      ],
+      "particles": [
+        {
+          "name": "embers-dying",
+          "count": 15,
+          "spread": [
+            1.5,
+            3,
+            1.5
+          ],
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "color": "#ff6622",
+          "size": 0.05,
+          "opacity": 0.5,
+          "driftSpeed": 0.6
+        },
+        {
+          "name": "fireflies",
+          "count": 25,
+          "spread": [
+            18,
+            8,
+            18
+          ],
+          "offset": [
+            0,
+            5,
+            0
+          ],
+          "color": "#aaff44",
+          "size": 0.08,
+          "opacity": 0.4,
+          "driftSpeed": 0.2,
+          "twinkle": true
+        }
+      ]
+    }
+  ]
+}

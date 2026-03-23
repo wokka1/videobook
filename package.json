@@ -1,0 +1,17 @@
+{
+  "name": "videobook",
+  "version": "0.1.0",
+  "description": "Interactive 3D audiobook experience",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
