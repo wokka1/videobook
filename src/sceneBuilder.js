@@ -358,7 +358,7 @@ function buildLight(lightDef) {
       }
       break;
     case 'point':
-      light = new THREE.PointLight(color, intensity, lightDef.distance || 0);
+      light = new THREE.PointLight(color, intensity, lightDef.distance || 0, lightDef.decay ?? 1.5);
       if (lightDef.castShadow) {
         light.castShadow = true;
         light.shadow.mapSize.width = 1024;

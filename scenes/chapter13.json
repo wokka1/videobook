@@ -30,19 +30,19 @@
       "lights": [
         {
           "type": "ambient",
-          "color": "#12082a",
-          "intensity": 0.9
+          "color": "#3a2850",
+          "intensity": 0.6
         },
         {
           "type": "hemisphere",
           "color": "#4a3070",
           "groundColor": "#0a1a05",
-          "intensity": 1.25
+          "intensity": 0.8
         },
         {
           "type": "directional",
           "color": "#5533aa",
-          "intensity": 0.8,
+          "intensity": 0.6,
           "position": [
             5,
             15,
@@ -579,18 +579,18 @@
         {
           "type": "ambient",
           "color": "#08040f",
-          "intensity": 0.45
+          "intensity": 0.08
         },
         {
           "type": "point",
           "color": "#ff8833",
-          "intensity": 3.0,
+          "intensity": 25,
           "position": [
             0.8,
             1.5,
             1.2
           ],
-          "distance": 7,
+          "distance": 0,
           "castShadow": true,
           "flicker": true,
           "flickerSpeed": 8,
@@ -600,7 +600,7 @@
           "type": "hemisphere",
           "color": "#1a1030",
           "groundColor": "#0a1505",
-          "intensity": 0.5
+          "intensity": 0.15
         }
       ],
       "objects": [
@@ -880,18 +880,18 @@
         {
           "type": "ambient",
           "color": "#060310",
-          "intensity": 0.3
+          "intensity": 0.05
         },
         {
           "type": "point",
           "color": "#ff7722",
-          "intensity": 5.25,
+          "intensity": 50,
           "position": [
             0,
             1.8,
             0
           ],
-          "distance": 14,
+          "distance": 0,
           "castShadow": true,
           "flicker": true,
           "flickerSpeed": 5,
@@ -900,13 +900,13 @@
         {
           "type": "point",
           "color": "#ff4400",
-          "intensity": 1.8,
+          "intensity": 50,
           "position": [
             0,
             0.5,
             0
           ],
-          "distance": 5,
+          "distance": 0,
           "flicker": true,
           "flickerSpeed": 7,
           "flickerAmount": 0.35
@@ -1381,18 +1381,18 @@
         {
           "type": "ambient",
           "color": "#050310",
-          "intensity": 0.24
+          "intensity": 0.04
         },
         {
           "type": "point",
           "color": "#ff6622",
-          "intensity": 4.5,
+          "intensity": 40,
           "position": [
             0,
             1.8,
             0
           ],
-          "distance": 10,
+          "distance": 0,
           "castShadow": true,
           "flicker": true,
           "flickerSpeed": 6,
@@ -1401,13 +1401,13 @@
         {
           "type": "point",
           "color": "#ff3300",
-          "intensity": 1.2,
+          "intensity": 40,
           "position": [
             0,
             0.3,
             0
           ],
-          "distance": 5,
+          "distance": 0,
           "flicker": true,
           "flickerSpeed": 9,
           "flickerAmount": 0.4
@@ -1415,13 +1415,13 @@
         {
           "type": "point",
           "color": "#cccc00",
-          "intensity": 0.6,
+          "intensity": 3,
           "position": [
             -2.5,
             3,
             -2
           ],
-          "distance": 3
+          "distance": 4
         }
       ],
       "objects": [
@@ -2096,18 +2096,18 @@
         {
           "type": "ambient",
           "color": "#040208",
-          "intensity": 0.24
+          "intensity": 0.04
         },
         {
           "type": "point",
           "color": "#ff4411",
-          "intensity": 3.75,
+          "intensity": 35,
           "position": [
             0,
             1.5,
             0
           ],
-          "distance": 8,
+          "distance": 0,
           "castShadow": true,
           "flicker": true,
           "flickerSpeed": 8,
@@ -2116,13 +2116,13 @@
         {
           "type": "point",
           "color": "#ff2200",
-          "intensity": 0.9,
+          "intensity": 35,
           "position": [
             2,
             0.5,
             1.5
           ],
-          "distance": 4
+          "distance": 0
         }
       ],
       "objects": [
@@ -2588,18 +2588,18 @@
         {
           "type": "ambient",
           "color": "#060310",
-          "intensity": 0.36
+          "intensity": 0.06
         },
         {
           "type": "point",
           "color": "#ff5511",
-          "intensity": 6.75,
+          "intensity": 70,
           "position": [
             0,
             2,
             0
           ],
-          "distance": 14,
+          "distance": 0,
           "castShadow": true,
           "flicker": true,
           "flickerSpeed": 10,
@@ -2608,13 +2608,13 @@
         {
           "type": "point",
           "color": "#ff8844",
-          "intensity": 3.0,
+          "intensity": 70,
           "position": [
             0,
             0.5,
             0
           ],
-          "distance": 6,
+          "distance": 0,
           "flicker": true,
           "flickerSpeed": 12,
           "flickerAmount": 0.5
@@ -3187,18 +3187,18 @@
         {
           "type": "ambient",
           "color": "#08051a",
-          "intensity": 0.6
+          "intensity": 0.06
         },
         {
           "type": "point",
           "color": "#ff7733",
-          "intensity": 2.7,
+          "intensity": 20,
           "position": [
             0,
             1.2,
             0
           ],
-          "distance": 8,
+          "distance": 0,
           "castShadow": true,
           "flicker": true,
           "flickerSpeed": 4,
@@ -3207,13 +3207,13 @@
         {
           "type": "point",
           "color": "#ff5522",
-          "intensity": 0.75,
+          "intensity": 20,
           "position": [
             0,
             0.3,
             0
           ],
-          "distance": 4,
+          "distance": 0,
           "flicker": true,
           "flickerSpeed": 6,
           "flickerAmount": 0.25
